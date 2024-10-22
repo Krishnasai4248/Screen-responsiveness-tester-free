@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start */
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.controls {
+    width: 300px; /* Fixed width for the controls sidebar */
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 20px; /* Space between controls and screen */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    height: 90vh; /* Height of the sidebar */
+}
+
+.screen {
+    flex: 2; /* Screen area */
+    position: relative;
+}
+
+.device-frame {
+    position: relative;
+    border: 16px solid #ccc; /* Device frame border */
+    border-radius: 36px; /* Rounded corners for the device */
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+input, select, button {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
